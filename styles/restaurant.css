@@ -88,3 +88,35 @@ main{
     background-color: white;
     color: black;
 }
+
+/* food section */
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: rgb(218, 165, 32);
+}
+
+.food-item img{
+    width: 400px;
+    height: 300px;
+}
+
+.food-item{
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 200px;
+}
+
+.food-description{
+    color: gray;
+}
+
+
+.sizzling{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
