@@ -11,10 +11,6 @@
 
 
 /* shared style */
-.bg-color{
-    background-color: rgb(128, 0, 32);
-    border-radius: 10px;
-}
 
 .display-flex{
     display: flex;
@@ -63,6 +59,13 @@ main{
     font-weight: 800;
 }
 
+
+.bg-color{
+    background-color: rgb(128, 0, 32);
+    border-radius: 10px;
+}
+
+
 .banner-img{
     width: 600px;
     height: 800px;
@@ -94,13 +97,13 @@ main{
 .section-title{
     text-align: center;
     font-size: 3rem;
-    text-decoration: underline;
     color: rgb(218, 165, 32);
 }
 
 .food-item img{
     width: 400px;
     height: 300px;
+    border-radius: 30px;
 }
 
 .food-item{
@@ -119,4 +122,39 @@ main{
     font-size: 20px;
     font-weight: bold;
     color: black;
+}
+
+
+/* Food gallery */
+.food-gallery img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.food-gallery{
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+
+
+
+@media screen and (max-width:576px) {
+.navbar , 
+.banner,
+.food-item,
+.food-gallery{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    }
+    .banner-img, .bg-color, .section-title{
+        width: 100%;
+    }
+    /* .food-gallery{
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    
 }
